@@ -4,79 +4,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3ff35f48ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>ZaidKhanPortfolio</title>
 </head>
 
 <body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/zaidlogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Mern Stack Developer</p>
+                <h1>Hi, I'm <span style="color: #01f172;">Zaid Khan</span><br> Passionate Programmer</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------------About----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/zaidreal.png" alt="" class="desktopzaid">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>I am a front-end developer specializing in HTML, CSS, Bootstrap, and JavaScript. My approach is
+                        focused on creating visually appealing and user-friendly web applications. I am known for my
+                        strong
+                        communication skills and proficiency in spoken English, which allows me to effectively
+                        collaborate
+                        with teams and clients. I am eager to collaborate and learn from new opportunities. I am
+                        passionate
+                        about staying updated with the latest technologies and trends in web development. If you're
+                        looking
+                        for someone dedicated to delivering high-quality solutions and keen on professional growth, I'd
+                        love
+                        to connect.</p>
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('expirence')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Communication</span><br>Professional English Speaker</li>
+                            <li><span>Front-End</span><br>Crafting Good Web Interface With HTML,CSS and Javascript</li>
+                            <li><span>Back-End</span><br>Certified Professional Mern Stack Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="expirence">
+                        <ul>
+                            <li><span>2023</span><br>Professional English Speaker</li>
+                            <li><span>2023</span><br>Crafting Good Web Interface With HTML,CSS and Javascript</li>
+                            <li><span>2023</span><br>Certified Professional Mern Stack Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>The Pinnacle Academy</span><br>2016 to 2022 6 Class To 8</li>
+                            <li><span>The Pinnacle Academy</span><br>2022 to 2024 9 Class To 10</li>
+                            <li><span>The Pinnacle Academy</span><br>2024 Final Year Completed Metric</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------Services----------------->
+    <div id="services">
+        <div class="container">
+            <h2 class="sub-title">My Abilities</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-wordpress"></i>
+                    <h2>WordPress</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam fugit provident
+                        placeat
+                        iusto reiciendis?.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-file-code"></i>
+                    <h2>HTML,CSS,Bootstrap,Js</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate nulla in aspernatur
+                        consequatur
+                        possimus fuga!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>React.js,Node.js</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde sequi totam animi, eveniet eos
+                        magni!.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------Portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png">
+                    <div class="layer">
+                        <h2>Social Media</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, doloremque.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png">
+                    <div class="layer">
+                        <h2>Social Media</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, doloremque.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png">
+                    <div class="layer">
+                        <h2>Social Media</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, doloremque.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!---------Contact---------->
+    <div id="contact">
+        <div class="container">
+            <div class="row contact-container">
+                <div class="container-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> zaidwork76@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 03432420212</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/zaid-khan-div" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./images/Zaidkhan Cv.pdf" download class="btn2">Donwload CV</a>
+                </div>
+                <div class="container-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Reserved <i class="fa-solid fa-heart"></i> Zaidkhan</p>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="./images/zaidlogo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <p>Mern Stack Developer</p>
-            <h1>Hi, I'm <span style="color: #01f172;">Zaid Khan</span><br> Passionate Programmer</h1>
-        </div>
-    </div>
-</div>
-<!-----------------Abour----------------->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="./images/zaidreal.png" alt="" class="zaiduserpic">
-            </div>
-            <div class="about-col-2">
-                <h2 class="sub-title">About Me</h2>
-                <p>I am a front-end developer specializing in HTML, CSS, Bootstrap, and JavaScript. My approach is
-                    focused on creating visually appealing and user-friendly web applications. I am known for my strong
-                    communication skills and proficiency in spoken English, which allows me to effectively collaborate
-                    with teams and clients. I am eager to collaborate and learn from new opportunities. I am passionate
-                    about staying updated with the latest technologies and trends in web development. If you're looking
-                    for someone dedicated to delivering high-quality solutions and keen on professional growth, I'd love
-                    to connect.</p>
-                <div class="tab-titles">
-                    <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
-                    <div class="tab-links" onclick="opentab('expirence')">Experience</div>
-                    <div class="tab-links" onclick="opentab('education')">Education</div>
-                </div>
-                <div class="tab-content active-tab" id="skills">
-                    <ul>
-                        <li><span>Communication</span><br>Professional English Speaker</li>
-                        <li><span>Front-End</span><br>Crafting Good Web Interface With HTML,CSS and Javascript</li>
-                        <li><span>Back-End</span><br>Certified Professional Mern Stack Developer</li>
-                    </ul>
-                </div>
-                <div class="tab-content" id="expirence">
-                    <ul>
-                        <li><span>2023</span><br>Professional English Speaker</li>
-                        <li><span>2023</span><br>Crafting Good Web Interface With HTML,CSS and Javascript</li>
-                        <li><span>2023</span><br>Certified Professional Mern Stack Developer</li>
-                    </ul>
-                </div>
-                <div class="tab-content" id="education">
-                    <ul>
-                        <li><span>Metric</span><br>Professional English Speaker</li>
-                        <li><span>Metric</span><br>Crafting Good Web Interface With HTML,CSS and Javascript</li>
-                        <li><span>Metric</span><br>Certified Professional Mern Stack Developer</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-----------------Services----------------->
-<div id="services">
 
-</div>
 </html>

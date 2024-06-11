@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: "poppins", sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-color: #080808;
     color: #fff;
@@ -92,9 +94,7 @@ nav ul li a:hover::after {
     width: 100%;
     border-radius: 15px;
 }
-.zaiduserpic{
-    height: 650px;
-}
+
 .about-col-2 {
     flex-basis: 60%;
 }
@@ -107,7 +107,7 @@ nav ul li a:hover::after {
 }
 
 .sub-title+p {
-    color: #d8cccc;
+    color: #b6b6b6;
 }
 
 .tab-titles {
@@ -156,5 +156,324 @@ nav ul li a:hover::after {
 }
 
 .tab-content.active-tab {
+    color: #b6b6b6;
     display: block;
+}
+
+/* ----------My Abilities---------- */
+#services {
+    padding: 30px 0px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div {
+    padding: 40px;
+    font-size: 13px;
+    border-radius: 10px;
+    font-weight: 300;
+    background-color: #262626;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #fdfdfd;
+}
+
+.services-list p {
+    font-size: 14px;
+    color: #fdfdfd;
+    margin: 10px 0px;
+    line-height: 20px;
+}
+
+.services-list a {
+    color: #fdfdfd;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.services-list div:hover {
+    background-color: #01f171d1;
+    transform: translateY(-10px);
+}
+
+/* -------portfolio---------- */
+#portfolio {
+    padding: 50px 0px;
+}
+
+.work-list {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.work {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.work img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #01f172);
+    border-radius: 10px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layer h2 {
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.layer p {
+    font-size: 15px;
+}
+
+.layer a {
+    margin-top: 20px;
+    text-decoration: none;
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 50%;
+    color: #01f172;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    padding: 14px 50px;
+    border-radius: 6px;
+    border: 1px solid #01f172;
+    width: fit-content;
+    margin: 50px auto;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background-color: #01f172;
+}
+
+/* -------------Conact----------- */
+.container-left {
+    flex-basis: 35%;
+}
+
+.container-right {
+    flex-basis: 60%;
+}
+
+.container-left p {
+    margin-top: 30px;
+    color: white;
+}
+
+.container-left p i {
+    color: #01f172;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+    margin-right: 15px;
+}
+
+.social-icons a:hover {
+    color: #01f172;
+    transform: translateY(-5px);
+}
+
+.btn2 {
+    display: inline-block;
+    padding: 14px 50px;
+    border-radius: 6px;
+    border: 1px solid #01f172;
+    background-color: #01f172;
+    width: fit-content;
+    margin: 20px auto;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+.container-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #262626;
+    padding: 15px;
+    margin: 15px 0px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px;
+    background-color: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.copyright i {
+    color: #01f172;
+    font-size: 18px;
+}
+
+/* -------css FOR SMALL SCREEN----------- */
+.fa-bars {
+    display: none;
+}
+
+.fa-xmark {
+    display: none;
+}
+
+@media only screen and (max-width:600px) {
+    #header {
+        background-image: url(./images/phone-background.png);
+    }
+
+    .desktopzaid {}
+
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    .fa-bars {
+        display: block;
+        font-size: 25px;
+    }
+
+    .fa-xmark {
+        display: block;
+        font-size: 25px;
+    }
+
+    #sidemenu {
+        background-color: #01f172;
+        position: fixed;
+        top: 0px;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 999;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-xmark {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title {
+        font-size: 40px;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        margin-bottom: 25px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin-right: 30px;
+    }
+
+    /* Contact */
+    .contact-container{
+        flex-direction: column-reverse;
+    }
+    .container-left,
+    .container-right {
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+    .services-list h2{
+        font-size: 25px;
+    }
 }
