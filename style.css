@@ -497,3 +497,30 @@ form textarea {
     margin-top: -10px;
     display: block;
 }
+
+/* -----------Upside-------arrow---------- */
+.upside {
+    display: flex;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    background-color: #01f172;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+#up-icon {
+    display: flex;
+    justify-content: center;
+}
+
+#up-icon a {
+    color: white;
+    font-size: 25px;
+    margin-top: 18%;
+}

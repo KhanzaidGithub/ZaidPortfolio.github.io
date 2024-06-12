@@ -45,14 +45,22 @@ form.addEventListener('submit', e => {
         })
         .catch(error => console.error('Error!', error.message))
 })
+// Typing CDN
+var typed = new Typed('#element', {
+    strings: ['Front-End Developer.', 'HTML,CSS,Bootstrap and Js.', 'Mern Stack.'],
+    typeSpeed: 50,
+});
+//Up-Side-Icon
 
+let upicon = document.querySelector('.upside');
+upicon.style.display = 'none';
 
+function scrool() {
+    if (window.scrollY > 500) {
+        upicon.style.display = 'block'
+    }
+    else{
+        upicon.style.display='none'
+    }
+}
 
-    // Typing CDN
-  
-
-
-    var typed = new Typed('#element', {
-        strings: ['Front-End Developer.', 'HTML,CSS,Bootstrap and Js.', 'Mern Stack.'],
-        typeSpeed: 50,
-    });
