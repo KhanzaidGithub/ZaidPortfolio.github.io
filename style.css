@@ -4,9 +4,11 @@
     box-sizing: border-box;
     font-family: "poppins", sans-serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: #080808;
     color: #fff;
@@ -72,6 +74,12 @@ nav ul li a:hover::after {
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
+}
+
+#element {
+    font-size: 60px;
+    margin-top: 10px;
+    display: inline-block;
 }
 
 /* ------About Us----------*/
@@ -399,7 +407,6 @@ form textarea {
         background-image: url(./images/phone-background.png);
     }
 
-    .desktopzaid {}
 
     .header-text {
         margin-top: 100%;
@@ -407,6 +414,10 @@ form textarea {
     }
 
     .header-text h1 {
+        font-size: 30px;
+    }
+
+    #element {
         font-size: 30px;
     }
 
@@ -463,17 +474,26 @@ form textarea {
     }
 
     /* Contact */
-    .contact-container{
+    .contact-container {
         flex-direction: column-reverse;
     }
+
     .container-left,
     .container-right {
         flex-basis: 100%;
     }
-    .copyright{
+
+    .copyright {
         font-size: 14px;
     }
-    .services-list h2{
+
+    .services-list h2 {
         font-size: 25px;
     }
+}
+
+#msg {
+    color: #01f172;
+    margin-top: -10px;
+    display: block;
 }
