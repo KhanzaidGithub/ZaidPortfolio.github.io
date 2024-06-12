@@ -27,10 +27,10 @@ function closemenu() {
 }
 
 
-// Contact data bas
+// Contact data bas  
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxKxdPIN_nZDZYI6EUbZoa7QlmCrBaOdN0y_lcaed7MWUSM2htgu7JNitYbw-B95ECT/exec'
+const scriptURL = ' https://script.google.com/macros/s/AKfycbxKv18IVqjU_FcG2-07U0gWuvN6e8pu-65SbCTFk4YxUK0cI5U4kkLwK7wfXi1qGW12/exec'
 const form = document.forms['submit-to-google-sheet']
 
 form.addEventListener('submit', e => {
